@@ -1,10 +1,10 @@
-##Popular Segment List and Leaderboard 
+## Popular Segment List and Leaderboard 
 Bu uygulamada [Strava](https://www.strava.com/) sitesindeki **Istanbul** konumundaki en çok kullanilan 10 yolu listeler. Ve seçilen yolun lider tablosunu gösterir. 
 
-##Code Style
+## Code Style
 Proje Python programlama dili ile yazilmiştir. 
 
-##How to Use?
+## How to Use?
 KullaniciGiris.py adlı dosyayı çaliştiriyoruz.
 Karşınıza asagidaki gibi bir liste gelecektir.
 
