@@ -5,7 +5,7 @@ import Segment
 #segment idsini alıyor. Fonksiyona parametre olarak veriyor.
 def getInput():
     segArr = Segment.listSegments()
-    inp = int(input("\n Lider Tablosunu Görmek İstediğiniz Segmenti Seçiniz: "))
+    inp = int(input("\n Lider Tablosunu Gormek Istediginiz Segmenti Seciniz: "))
     print("\n", segArr[inp].name , " Lider Tablosu")
     atheleteArr = getBoard(str(segArr[inp].id), segArr[inp].distance)
     athName = input(" \n Atlet ismi giriniz: ")
@@ -25,7 +25,7 @@ def getBoard(id, distance):
     endpoint='https://www.strava.com/api/v3/segments/'+segmentid+'/leaderboard?page=1&per_page=50&'
     #endpoint='https://www.strava.com/api/v3/segment_efforts/7171356&'
     headers = {'access_token': 'db66b2e6abe30e7c645135c232f3fa4da78d5350'}
-    #Stravaya üye olunurken alınan API key
+    #Stravaya üye olunurken alinan API key
 
 
     r = requests.get(endpoint, json=headers)
@@ -41,13 +41,13 @@ def getBoard(id, distance):
                ' - Derecesi: {}'.format(item["rank"]), " - Skor:", a.skor)
     return atheleteArr
 
-#Skor hesabı yapar
+#Skor hesabi yapar
 def calculateSkor(athelete, distance):
     skor = int(9**(distance / athelete.time)/10000000)
     return skor
 
 
-# Seçilen Atletin o segmentte leaderboardta kaç kere listelendiğini sayar.
+# Seçilen Atletin o segmentte leaderboardta kaç kere listelendigini sayar.
 def counterAthelete(name, atheleteArr):
     sayac = 0
     for item in atheleteArr:

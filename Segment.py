@@ -3,7 +3,7 @@ import requests
 #API url adresimiz
 endpoint = 'https://www.strava.com/api/v3/segments/explore?bounds=40.85260833969849,28.645335828710927,41.163500149058684,29.31138197128905&activity_type=riding&min_cat=0&max_cat=0&'
 
-#Stravaya üye olunurken alınan API key
+#Stravaya uye olunurken alınan API key
 headers = {'access_token': 'db66b2e6abe30e7c645135c232f3fa4da78d5350'}
 
 
@@ -16,7 +16,7 @@ class Segment:
         self.name = name
         self.distance = distance
 
-# Stravdan segmentleri çekiyor,yazdırıyor ve obje olarak döndürüyor
+# Stravdan segmentleri cekiyor,yazdiriyor ve obje olarak donduruyor
 def listSegments():
     counter = 0
     segArr = []

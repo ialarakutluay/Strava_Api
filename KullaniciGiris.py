@@ -3,10 +3,10 @@ import Liderboard
 
 while(True):
     print("""***************************************************************************
-        MOST POPULAR 10 CYCLİNG SEGMENT İN İSTANBUL
+        MOST POPULAR 10 CYCLING SEGMENT IN ISTANBUL
         """)
     Liderboard.getInput()
-    a = input("Segmentleri Tekrar görmek için (0)  :")
+    a = input("Segmentleri tekrar gormek icin (0)  :")
     if(a != "0"):
         break
     else:
